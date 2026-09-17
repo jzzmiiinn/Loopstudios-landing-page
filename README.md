@@ -1,75 +1,101 @@
-# React + TypeScript + Vite
+# Loopstudios Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Loopstudios landing page built with **React, TypeScript, and Tailwind CSS**, based on a [Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw) challenge.
 
-Currently, two official plugins are available:
+## Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Loopstudios Landing Page](./preview.jpg)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Responsive design for mobile, tablet, and desktop
+* Responsive hero section with different images for mobile and desktop
+* Mobile navigation menu
+* Interactive navigation
+* Responsive creations grid
+* Creation cards rendered from data
+* Hover effects
+* Responsive footer
+* Reusable React components
+* TypeScript type definitions
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Clone the repository
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone https://github.com/jzzmiiinn/Loopstudios-landing-page.git
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### Navigate to the project
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd Loopstudios-landing-page
 ```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+The application will be available at the local development URL shown in your terminal.
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── About.tsx
+│   ├── CreationCard.tsx
+│   ├── CreationsList.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   └── Hero.tsx
+├── data/
+│   └── creations.ts
+├── types/
+│   └── creation.ts
+├── App.tsx
+├── index.css
+└── main.tsx
+```
+
+## What I Practiced
+
+This project helped me practice:
+
+* Building reusable React components
+* Passing data through props
+* Using TypeScript interfaces and types
+* Rendering lists with `.map()`
+* Creating responsive layouts with Tailwind CSS
+* Using CSS Grid for responsive card layouts
+* Handling mobile navigation with React state
+* Using responsive images
+* Structuring a React project
+
+## Credits
+
+Design and assets provided by **Frontend Mentor**.
+
+Challenge: [Loopstudios Landing Page](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw)
+
+## Author
+
+**Yasmin Ali**
+
+* GitHub: [@jzzmiiinn](https://github.com/jzzmiiinn)
