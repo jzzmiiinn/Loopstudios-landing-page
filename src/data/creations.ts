@@ -10,8 +10,8 @@ export const creations: Creation[] = [
   {
     id: 2,
     title: "NIGHT ARCHADE",
-    desktopImage: "/desktop/image-night-archade.jpg",
-    mobileImage: "/mobile/image-night-archade.jpg",
+    desktopImage: "/desktop/image-night-arcade.jpg",
+    mobileImage: "/mobile/image-night-arcade.jpg",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ export const creations: Creation[] = [
   {
     id: 8,
     title: "MAKE IT FISHEYE",
-    desktopImage: "/desktop/image-dfisheye.jpg",
-    mobileImage: "/mobile/imagefisheye.jpg",
+    desktopImage: "/desktop/image-fisheye.jpg",
+    mobileImage: "/mobile/image-fisheye.jpg",
   },
 ];
